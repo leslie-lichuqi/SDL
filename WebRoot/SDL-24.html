@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css"></link>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+		});
+	</script>
+	<style type="text/css">
+	.navi{
+		margin: 40px 0px;
+		text-align: right;
+		font-size: 14px;
+	}
+	.navi .selected{
+		color: #94c523;
+	}
+	.spaceIdentity .item{
+		width: 255px;
+		height: 292px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-right: 1px solid #d0d0d0;
+		border-bottom: 1px solid #d0d0d0;
+	}
+	.spaceIdentity .item1{
+		width: 481px;
+		height: 192px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-right: 1px solid #d0d0d0;
+		border-bottom: 1px solid #d0d0d0;
+		background-color: #efed80;
+		color: #595757;
+		font-size: 30px;
+		padding-top: 100px;
+		padding-left: 30px;
+	}
+	.logo-container{
+		border-top: 1px solid #d0d0d0;
+		border-left: 1px solid #d0d0d0;
+		width: 1024px;
+		overflow: hidden;
+		margin-bottom: 100px;
+	}
+	</style>
+	<body>
+		<div class="spaceIdentity">
+			<div class="page-container">
+				<div class="navi"><a class="selected" href="">餐饮业</a>／<a href="">时尚业</a>／<a href="">服务业</a></div>
+				<div class="logo-container">
+					<div class="left item1">Web design<br/>网站设计</div>
+					<div class="left item" style="background-image: url(img/logo_fashionWeek.jpg);"></div>
+					<div class="left item" style=""></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

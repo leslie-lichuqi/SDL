@@ -1,0 +1,41 @@
+.designNavi-container{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 5;
+}
+.navi-block{
+	width: 25px;
+	height: 130px;
+	background-color: #727171;
+}
+.navi-block.selected{
+	background: url("../img/design-arrow.png") no-repeat 80% center;
+	background-color: #727171;
+}
+.naviBar-container{
+	width: 100px;
+	height: 128px;
+	background:url("../img/design-navi-bg.png");
+	display: none;
+	border: 1px solid #696969;
+}
+.naviItem{
+	font-size: 14px;
+	padding: 0px 5px;
+	line-height: 21px;
+	cursor: pointer;
+}
+.naviItem:hover{
+	color: #94c525;
+}
+.naviSmallArrow{
+	width: 5px;
+	height: 9px;
+	background: url("../img/design-small-arrow.png") no-repeat center center;
+	position: absolute;
+	left: 19px;
+	top: 0px;
+	display: none;
+}
+.pin-wrapper{height: 0px;}

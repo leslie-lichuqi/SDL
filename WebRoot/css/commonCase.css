@@ -1,0 +1,75 @@
+.brandBuilding .navi{
+	margin: 35px 0;
+}
+.brandBuilding .navi a{
+	font-size: 14px;
+}
+.brandBuilding .navi .selected{
+	color: #94c523;
+}
+.brandBuilding .logo{
+	width: 260px;
+	text-align: center;
+	vertical-align: middle;
+}
+.brandBuilding .summary{
+	vertical-align:  middle;
+}
+.brandBuilding .summary p,strong{
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: normal !important;
+	margin-bottom: 10px;
+}
+.table-container{
+	margin-bottom: 40px;
+}
+.swiper-container, .swiper-slide {
+  width: 1024px;
+  height: 514px;
+  margin-bottom: 5px;
+}
+.leftArrow{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	background: url("../img/white-arrow.png") no-repeat center center;
+	width: 41px;
+	height: 514px;
+}
+.rightArrow{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url("../img/white-arrow-right.png") no-repeat center center;
+	width: 41px;
+	height: 514px;
+}
+.thumbnail{
+	margin-left: 5px;
+	width: 252px;
+}
+.thumbnail:FIRST-CHILD {
+	margin-left: 0px;
+}
+.list-container{
+	margin-bottom: 300px;
+}
+.list-container .list-item{
+	padding-top:70px;
+	border-bottom: 1px solid #b5b5b5;
+}
+.list-item-title{
+	color:#94c523;
+	font-size: 50px;
+}
+.list-item-content{
+	color:#94c523;
+	margin-top:20px;
+	font-size: 40px;
+}
+.list-item-summary{
+	color: #595757;
+	margin-top:20px;
+	margin-bottom: 70px;
+}

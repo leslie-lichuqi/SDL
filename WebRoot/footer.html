@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<style>
+		.footer-container{
+			background: #404040;
+			border-top: 18px solid #94c523;
+			height: 260px;
+			width: 100%;
+			padding-top: 35px;
+			box-sizing: border-box;
+		}
+		.footer-container .p1{
+			color: #94c523;
+			font-size: 16px;
+			margin-bottom:8px;
+		}
+		.footer-container .aboutusWrap{
+			width: 108px;
+			vertical-align: top;
+			margin-right: 45px;
+		}
+		.footer-container .contactWrap{
+			position: absolute;
+			right: 0px;
+			top:0px;
+		}
+		.footer-container .Ul1{
+			color: #fff;
+			border-right: 1px solid #343434;
+			padding-right: 30px;
+		}
+		.footer-container .Ul2{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 35px;
+			width: 260px;
+		}
+		.footer-container .Ul2 li{
+			font-size: 13px;
+			color: #fff;
+			margin-bottom: 7px;
+		}
+		.footer-container .Ul2 li:nth-child(1){
+			color: #94c523;
+		}
+		.footer-container .Ul1 li{
+			margin-bottom: 15px;
+			font-size: 13px;
+			background: url("img/footer-arrow.png") no-repeat left center;
+			padding-left: 25px;
+			color:#fff;
+		}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("#qqImage").click(function(){
+			window.location.href = "tencent://message/?uin=2557633020&amp;Site=有事Q我&amp;Menu=yes";
+		});
+	});
+	</script>
+	<body>
+		<div class="footer-container">
+			<div class="page-container">
+				<div class="aboutusWrap left">
+					<p class="p1">关注我们</p>
+					<img src="img/code.jpg">
+					<p class="p1" style="text-align: center;">公司微信</p>
+				</div>
+				<div class="aboutusWrap left">
+					<p class="p1">QQ在线咨询</p>
+					<img id="qqImage" src="img/qq-logo.png">
+				</div>
+				<div class="clear"></div>
+				<div class="contactWrap">
+					<ul class="Ul1 left">
+						<li>同愿首页</li>
+						<li>了解同愿</li>
+						<li>同愿案例</li>
+						<li>同愿服务</li>
+						<li>同愿动态</li>
+						<li>联系同愿</li>
+					</ul>
+					<ul class="Ul2 left">
+						<li>联系我们</li>
+						<li>广州同愿品牌策划有限公司<br/>Guangzhou SDL brand planning Co.，Ltd.</li>
+						<li>广州市越秀区环市东路371-375号世界贸易中心大厦南塔2009室</li>
+						<li>T    020-28848662 </li>
+						<li>E    SDL_brand@126.com</li>
+						<li>粤ICP备99887766号</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

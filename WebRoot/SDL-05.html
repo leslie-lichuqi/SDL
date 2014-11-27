@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+		})
+	</script>
+	<style type="text/css">
+		.contact-wrap{
+			margin:100px 0;
+			width: 270px;
+		}
+		.contact-wrap p,strong{
+			font-size: 14px;
+		}
+		.contactUs{
+			color: #595757;
+		}
+		.contactUs .title{
+			font-size: 27px;
+			font-weight: bold;
+		}
+		.map{
+			margin: 100px 0px;
+		}
+	</style>
+	<body>
+		<div class="contactUs">
+			<div class="page-container">
+				<div class="contact-wrap left">
+					<p class="title">联系同愿</p>
+					<p class="title">Contact Us</p>
+					<br/>
+					<p><strong>地址:</strong>广州市越秀区环市东路371-375号世界 贸易中心大厦南塔2009室</p>
+					<br/>
+					<p><strong>联系同愿·联系方式 </strong></p>
+					<p>T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;020-28848662</p>
+					<p>E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDL_brand@126.com</p>
+					<br/>
+					<p><strong>微信二维码 </strong> </p>
+					<p>扫描微信二维码，关注同愿文化，了解世界</p>
+					<p>品牌动向</p>
+					<br/>
+					<img src="img/code.jpg" style="width: 90px;">
+				</div>
+				<img alt="" class="map right" src="img/map.jpg">
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>

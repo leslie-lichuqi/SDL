@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css"></link>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+		})
+	</script>
+	<style type="text/css">
+		.title{
+			margin-top: 100px;
+		}
+		.subtitle{
+			font-size: 24px;
+			color: #000;
+			margin-bottom: 100px;
+		}
+		.sword-container{
+			background: url("img/ourAdvantage-sword.jpg");
+			width: 924px;
+			height: 1125px;
+			color:#595757;
+			position: relative;
+			margin-bottom: 200px;
+		}
+		.ourAdvantage .item{
+			position: absolute;
+			width: 22em;
+		}
+		.young{
+			top:0px;
+			left: 250px;
+		}
+		.model{
+			width: 20em;
+			top:600px;
+			left: 5px;
+		}
+		.operations{
+			top:480px;
+			left: 770px;
+			width: 16em;
+		}
+		.sense{
+			bottom:30px;
+			left: 205px;
+		}
+		.sword-title,.sword-subtitle{
+			font-size: 27px;
+			font-weight: bold;
+		}
+		.sword-content{
+			margin-top: 10px;
+		}
+	</style>
+	<body>
+		<div class="ourAdvantage">
+			<div class="page-container">
+				<img class="title" alt="" src="img/ourAdvantage.jpg">
+				<p class="subtitle">同愿优势</p>
+				<div class="sword-container">
+					<div class="item young">
+						<p class="sword-title">拥有年轻元素</p>
+						<p class="sword-subtitle">Have a young element</p>
+						<p class="sword-content">我们敢于创新、有胆量、有拼劲、有活力；能与时俱进、笃学精思、推陈出新为团队核心价值观；</p>
+					</div>
+					<div class="item model">
+						<p class="sword-title">重视全球品牌连锁模式的发展方向,</p>
+						<p class="sword-subtitle">Importance to the development direc-<br/>tion of the global brand chain model</p>
+						<p class="sword-content">深度研究全球500强优秀的商业模式，对辅助合作企业的良性发展有非常坚实的基础</p>
+					</div>
+					<div class="item operations">
+						<p class="sword-title">跨领域的品牌创作与品牌营运的复合型行业精英：</p>
+						<p class="sword-subtitle">Composite cross- industry elite brand creation and brand operations:</p>
+						<p class="sword-content">多年来我们服务于不同领域的顶尖企业，使我们有机会嫁接各个领域之间的品牌运营服务，在品牌创作方面，我们是利用艺术元素和审美知识，帮助品牌和商品创造更大商业价值的专业人才。</p>
+					</div>
+					<div class="item sense">
+						<p class="sword-title">敏锐的市场触觉</p>
+						<p class="sword-subtitle">Keen market sense</p>
+						<p class="sword-content">为品牌带来更对的创新和惊喜。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

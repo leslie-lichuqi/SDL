@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=EDGE,chrome=1"> 
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+			
+		});
+	</script>
+	<style type="text/css">
+	.about-SDl .adver{
+		margin: 100px 0;
+	}
+	.about-SDl p{
+		font-size: 17px;
+		letter-spacing: 2px;
+	}
+	</style>
+	<body>
+		<div class="about-SDl">
+			<div class="page-container">
+				<img class="adver" alt="" src="img/about-SDL.jpg">
+				<p>“同愿品牌策划“是一家全案整合型品牌策划公司，<span style="color: #94c523">专注连锁品牌建设和服务。</span>致力于为中国企业和品牌提供系统、全面、专业的品牌策划
+和设计。为客户提供品牌诊断、品牌运营、行业分析、发展战略、品牌规划、商业模式构建、营销策略、品牌设计、品牌推广和制作等全程
+服务。同愿的核心定位为实现心中梦想，为领头中国梦的中国中小型企业提供有效的品牌创作与品牌营运服务，我们与每一位坚持努力实现
+中国梦的华人有共同愿景，而取名为“同愿”S D L ！
+     <p style="text-indent: 2em;margin:20px 0 100px 0;"> 同愿拥有一支一专多能的跨界型营销、策划和创意人才组成的多元化推广团队。 在传统策划亟需突破和升级的新营销传播时代，同愿策
+划将跨界创新融入策划理念，跨界探寻产品推广的新亮点、新市场，先后帮助多家中外一线企业实现了品牌的跨界崛起</p>
+			</div>
+		</div>
+	</body>
+</html>

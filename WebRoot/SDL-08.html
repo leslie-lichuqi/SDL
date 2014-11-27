@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=EDGE,chrome=1"> 
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css"></link>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+			
+			var mySwiper = $('.swiper-container').swiper({
+			    //Your options here:
+			    mode:'horizontal',
+			    loop: true
+			    //etc..
+			  });
+			$(".leftArrow").click(function(){
+				mySwiper.swipePrev();
+			});
+			$(".rightArrow").click(function(){
+				mySwiper.swipeNext();
+			});
+		})
+	</script>
+	<style type="text/css">
+		.brandBuilding .navi{
+			margin: 35px 0;
+		}
+		.brandBuilding .navi a{
+			font-size: 14px;
+		}
+		.brandBuilding .navi .selected{
+			color: #94c523;
+		}
+		.brandBuilding .logo{
+			width: 260px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.brandBuilding .summary{
+			vertical-align:  middle;
+		}
+		.brandBuilding .summary p,strong{
+			font-size: 16px;
+			letter-spacing: 2px;
+		}
+		.table-container{
+			margin-bottom: 40px;
+		}
+		.swiper-container, .swiper-slide {
+		  width: 1024px;
+		  height: 514px;
+		  margin-bottom: 5px;
+		}
+		.leftArrow{
+			position: absolute;
+			top: 0px;
+			left:0px;
+			background: url("img/white-arrow.png") no-repeat center center;
+			width: 41px;
+			height: 514px;
+		}
+		.rightArrow{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			background: url("img/white-arrow-right.png") no-repeat center center;
+			width: 41px;
+			height: 514px;
+		}
+		.thumbnail{
+			margin-left: 5px;
+			width: 252px;
+		}
+		.thumbnail:FIRST-CHILD {
+			margin-left: 0px;
+		}
+		.list-container{
+			margin-bottom: 300px;
+		}
+		.list-container .list-item{
+			padding-top:70px;
+			border-bottom: 1px solid #b5b5b5;
+		}
+		.list-item-title{
+			color:#94c523;
+			font-size: 50px;
+		}
+		.list-item-content{
+			color:#94c523;
+			margin-top:20px;
+			font-size: 40px;
+		}
+		.list-item-summary{
+			color: #595757;
+			margin-top:20px;
+			margin-bottom: 70px;
+		}
+	</style>
+	<body>
+		<div class="brandBuilding">
+			<div class="page-container">
+				<div class="navi right">
+					<a class="selected" href="">餐饮业</a>/<a href="">时尚业</a>/<a href="">服务业</a>
+				</div>
+				<div class="clear"></div>
+				<div class="table-container">
+					<div class="cell logo">
+						<img alt="" src="img/culinaryDesgner_logo.jpg">
+					</div>
+					<div class="cell summary">
+						<p><strong>客户名称:</strong>和煮饪</p>
+						<p><strong>简介:</strong>“御博荟”是广州纳兆贸易有限公司旗下葡萄酒连锁品牌。主要进口来自法国、澳洲、意大利，西班牙、美国等近百款高品质原装原瓶葡萄酒产品，代理商遍布广东、江苏、上海、浙江、湖南、湖北、重庆等十多个省份和直辖市。在香港和海外多地建立以采购为主营的直属分公司，在国内以上海，合肥等大城市为首成立了纳兆集团旗下的多家子公司.</p>
+					</div>
+				</div>
+				
+				<div class="swiper-container">
+					  <div class="swiper-wrapper">
+					      <!--First Slide-->
+					      <div class="swiper-slide"> 
+					      	<img alt="" src="img/hzr_adver.jpg">
+					      </div>
+					  </div>
+					  <div class="leftArrow"></div>
+					  <div class="rightArrow"></div>
+				</div>
+				<div>
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<div class="clear"></div>
+			    </div>
+			    
+			    <div class="list-container">
+					<div class="list-item">
+						<p class="list-item-title">Service content</p>
+						<p class="list-item-content">服务内容</p>
+						<p class="list-item-summary">品牌新生设计，包括品牌定位、VI设计、SI设计.</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">Project Background</p>
+						<p class="list-item-content">项目背景</p>
+						<p class="list-item-summary">御博荟是纳兆公司新生品牌，同愿为御博荟进行全案企业形象策划。主要针对高端人群，高级社交活动进行设计。在2014年，御博荟2014致力于走向全国市场走向全国市场</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">Facing problems</p>
+						<p class="list-item-content">面临问题</p>
+						<p class="list-item-summary">有参意产品定位在健康营养海产产品，而且有参意为广州全新的饮食品牌，知名度与熟悉度都不高，如何把健康、营养、高端食材等关键字通过有参意的展示和宣传传递到目标人群中是一个难题.</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">The solution</p>
+						<p class="list-item-content">解决方案</p>
+						<p class="list-item-summary">御博荟作为一个全新的品牌，我们首先通过VI系统，SI系统设计对品牌的形象进行一个整体的包装。继而，在塑造品牌形象后为品牌的发展奠基，进行了微信线上宣传和招商加盟手册的设计。</p>
+					</div>		    
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

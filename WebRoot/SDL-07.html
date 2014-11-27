@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+		})
+	</script>
+	<style type="text/css">
+		.center{margin: 0px auto;display: block;margin-top: 100px;}
+		.subTitle{font-size: 21px;color: #000}
+	</style>
+	<body>
+		<div class="brandBuilding">
+			<div class="page-container">
+				<img alt="" src="img/ourTeam_logo.jpg" style="margin-top: 100px;">
+				<p class="subTitle">同愿团队</p>
+				<div style="margin: 100px 0px">
+					<img alt="" src="img/ourTeam_head.jpg" class="left">
+					<img alt="" src="img/ourTeam_man.jpg" class="right">
+					<div class="clear"></div>
+				</div>
+				<p style="margin-bottom: 370px;">个人简介</p>
+			</div>
+		</div>
+	</body>
+</html>

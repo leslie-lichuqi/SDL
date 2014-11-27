@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=EDGE,chrome=1"> 
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+			
+		});
+	</script>
+	<style type="text/css">
+	.about-SDl .adver{
+		margin: 100px 0;
+	}
+	.about-SDl p{
+		font-size: 17px;
+		letter-spacing: 2px;
+	}
+	</style>
+	<body>
+		<div class="about-SDl">
+			<div class="page-container">
+				<img class="adver" alt="" src="img/ourStory.jpg">
+				<p style="text-indent: 2em;">人才是我们最宝贵的财富。我们致力于为员工提供有趣又有挑战性的工作，轻松又健康的工作氛围，定期有针对性地进行内部培训，让你的工作轻松有效。
+     			<p style="text-indent: 2em;margin:20px 0 100px 0;">同愿品牌注重人才建设与培训，每月公司进行专业培训与考核。</p>
+			</div>
+		</div>
+	</body>
+</html>

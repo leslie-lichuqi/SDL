@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=EDGE,chrome=1"> 
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css"></link>
+		<link rel="stylesheet" href="css/commonCase.css" type="text/css"></link>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$.post("header.html","",function(r){
+				$("body").prepend(r);
+			});
+			$.post("footer.html","",function(r){
+				$("body").append(r);
+			});
+			
+			var mySwiper = $('.swiper-container').swiper({
+			    //Your options here:
+			    mode:'horizontal',
+			    loop: true
+			    //etc..
+			  });
+			$(".leftArrow").click(function(){
+				mySwiper.swipePrev();
+			});
+			$(".rightArrow").click(function(){
+				mySwiper.swipeNext();
+			});
+		})
+	</script>
+	<body>
+		<div class="brandBuilding">
+			<div class="page-container">
+				<div class="navi right">
+					<a class="selected" href="">餐饮业</a>/<a href="">时尚业</a>/<a href="">服务业</a>
+				</div>
+				<div class="clear"></div>
+				<div class="table-container">
+					<div class="cell logo">
+						<img alt="" src="img/logo_gulushop1.jpg">
+					</div>
+					<div class="cell summary">
+						<p><strong>客户名称:</strong>广州咕噜咕噜餐饮管理有限公司</p>
+						<p><strong>简介:</strong>咕噜咕噜为銚海集团旗下轻餐饮品牌，针对青年消费群体，主营饮料与熟食，多个产品得到消费者的认可，在广东地区轻餐饮行业顶端占有一席之位。</p>
+					</div>
+				</div>
+				
+				<div class="swiper-container">
+					  <div class="swiper-wrapper">
+					      <!--First Slide-->
+					      <div class="swiper-slide"> 
+					      	<img alt="" src="img/hzr_adver.jpg">
+					      </div>
+					  </div>
+					  <div class="leftArrow"></div>
+					  <div class="rightArrow"></div>
+				</div>
+				<div>
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<img class="left thumbnail" src="img/hrz_thumbnail.jpg">
+				  	<div class="clear"></div>
+			    </div>
+			    
+			    <div class="list-container">
+					<div class="list-item">
+						<p class="list-item-title">Service content</p>
+						<p class="list-item-content">服务内容</p>
+						<p class="list-item-summary">品牌招商画册策划与设计</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">Project Background</p>
+						<p class="list-item-content">项目背景</p>
+						<p class="list-item-summary">御博荟是纳兆公司新生品牌，同愿为御博荟进行全案企业形象策划。主要针对高端人群，高级社交活动进行设计。在2014年，御博荟2014致力于走向全国市场走向全国市场</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">Facing problems</p>
+						<p class="list-item-content">面临问题</p>
+						<p class="list-item-summary">有参意产品定位在健康营养海产产品，而且有参意为广州全新的饮食品牌，知名度与熟悉度都不高，如何把健康、营养、高端食材等关键字通过有参意的展示和宣传传递到目标人群中是一个难题.</p>
+					</div>
+					<div class="list-item">
+						<p class="list-item-title">The solution</p>
+						<p class="list-item-content">解决方案</p>
+						<p class="list-item-summary">御博荟作为一个全新的品牌，我们首先通过VI系统，SI系统设计对品牌的形象进行一个整体的包装。继而，在塑造品牌形象后为品牌的发展奠基，进行了微信线上宣传和招商加盟手册的设计。</p>
+					</div>		    
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

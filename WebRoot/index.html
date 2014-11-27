@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>同顾品牌策划</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css"></link>
+		<script type="text/javascript" src="js/base.js"></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = $('.swiper-container').swiper({
+			    //Your options here:
+			    mode:'horizontal',
+			    loop: true,
+			    pagination:".pagination",
+			    paginationClickable:true
+			    //etc..
+			  });
+			sprite_animation();
+		});
+		
+		function sprite_animation(){
+			$(".sprite div").css("top","-"+$(this).height()+"px");
+			$(".sprite").bind("mouseenter mouseleave",
+			function(e){
+				var w = $(this).width();
+				var h = $(this).height();
+				/*var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+		        var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);*/
+		        var x = (e.pageX - $(".bk").offset().left-this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+		        var y = (e.pageY - $(".bk").offset().top-this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+		        var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4; //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+				var eventType = e.type;
+				if(e.type == 'mouseenter'){
+					switch(direction){
+						case 0:
+							$(this).find("div").css({
+								"left":"0px",
+								"top":"-"+$(this).height()+"px"
+							});
+							break;
+						case 1:
+							$(this).find("div").css({
+								"left":$(this).width()+"px",
+								"top":"0px"
+							});
+							break;
+						case 2:
+							$(this).find("div").css({
+								"left":"0px",
+								"top":$(this).height()+"px"
+							});
+							break;
+						case 3:
+							$(this).find("div").css({
+								"left":"-"+$(this).width()+"px",
+								"top":"0px"
+							});
+							break;
+					}
+					$(this).find("div").show().animate({"left":0,"top":0},200);
+				}else{
+					$(this).find("div").fadeOut(200);
+				}
+			});
+		}
+	</script>
+	<style type="text/css">
+	.swiper-container,.swiper-slide{width:1024px;height:512px;margin:15px 0;}
+	.pagination{text-align:center;}
+	.pagination .swiper-pagination-switch{width:12px;height:12px;background-color:#595757;border-radius:12px;display:inline-block;_display:inline-block;vertical-align:middle;cursor:pointer;margin:0 9px;}
+	.pagination .swiper-pagination-switch.swiper-active-switch{width:20px;height:20px;_width:12px;_height:12px;border-radius:20px;background-color:#94c523;}
+	.bk{position:relative;width:1024px;height:1190px;margin:30px 0;}
+	.bk div{position:absolute;}
+	.bk-item1{width:255px;height:350px;background-color:#c8b262;top:0;left:0;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	.bk-item2{width:514px;height:350px;background-color:#c8b262;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	.bk-item3{width:255px;height:230px;background-color:#efefef;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	.gray p{color:#595757!important;}
+	.bk-item4{width:510px;height:255px;background-color:#3e3a39;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	.bk-item5{width:514px;height:510px;background-color:#8fc31f;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	.bk-item6{width:255px;height:360px;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-size:100% 100%;}
+	
+	.sprite div{opacity:0.9;top: 0px;width: 100%;left: 0px;display: none;height: 100%;position: absolute;}
+	.fadein{-webkit-transition:all .5s;top:0!important;left:0!important;}
+	.bk p{color:#fff;font-size:14px;margin:0 20px 5px;}
+	.bk-title{margin-top:20px!important;font-size:26px!important;font-weight:700;}
+	</style>
+	<body>
+		<div class="SDL21">
+			<div class="page-container">
+				<div class="swiper-container">
+					  <div class="swiper-wrapper">
+					      <!--First Slide-->
+					      <div class="swiper-slide"> 
+					      	<img alt="" src="img/SDL21.jpg">
+					      </div>
+					      <div class="swiper-slide"> 
+					      	<img alt="" src="img/SDL21.jpg">
+					      </div>
+					  </div>
+				</div>
+				<div class="pagination"></div>
+				
+				<div class="bk">
+					<div class="bk-item1 sprite" style="background-image: url('img/index_logo_yuhai.jpg');">
+						<div class="bk-item1">
+							<p class="bk-title">YUHAI</p>
+							<p>Service content: Brand positioning</p>
+							<p>裕海投资</p>
+							<p>品牌新生设计，品牌定位、VI设计</p>
+						</div>
+					</div>
+					<div class="bk-item1 sprite" style="background-color:#257631;left: 255px;background-image: url('img/index_logo_professional.jpg');">
+						<div class="bk-item1" style="background-color:#257631;">
+							<p class="bk-title">YING TONG <br/> GUANG</p>
+							<p>Service content: Brand<br/>design, Brand<br/>positioning, Promotion<br/>planning Micro<br/>message line</p>
+							<p>杰和婴童馆</p>
+							<p>品牌新生设计，品牌定位、VI设计</p>
+						</div>
+					</div>
+					<div class="bk-item2 sprite" style="left:510px;background-image: url('img/index_logo_talents.jpg');">
+						<div class="bk-item2">
+							<p class="bk-title"> TALENT’S  LIFE</p>
+							<p>Service content: Brand design, Brand<br/>positioning, Promotion planning Micro<br/>message line</p>
+							<p>御博荟（红酒连锁品牌）</p>
+							<p>品牌新生设计，品牌定位，VI设计</p>
+						</div>
+					</div>
+					<div class="bk-item3 gray sprite" style="top:350px;background-image: url('img/index_logo_fashionWeek.jpg');">
+						<div class="bk-item3">
+							<p class="bk-title">Guangzhou<br/>International<br/>Fashion Week</p>
+							<p>Site planning and design</p>
+							<p>广州国际时尚周</p>
+							<p>网站策划与设计</p>
+						</div>
+					</div>
+					<div class="bk-item3 sprite" style="top:350px;left: 255px;background-color: #595757;background-image: url('img/index_logo_designer.jpg');">
+						<div class="bk-item3" style="background-color: #595757">
+							<p class="bk-title">Culinary<br/>Designer</p>
+							<p>Service content: Brand <br/>positioning, Brand design</p>
+							<p style="color: #c8b262">和煮饪(西安时尚健康餐饮品牌）</p>
+							<p style="color: #c8b262">品牌新生设计，品牌定位、VI设计、SI设计</p>
+						</div>
+					</div>
+					<div class="bk-item3 sprite" style="top:350px;left: 510px;height: 335px;background-color: #dae000;background-image: url('img/index_logo_bms.jpg');">
+						<div class="bk-item3" style="background-color: #dae000">
+							<p class="bk-title">BMC</p>
+							<p>Service content: Brand<br/>positioning,  Marketing<br/>planning,</p>
+							<p>博马斯（汽配新品牌）</p>
+							<p>品牌新生设计，包括品牌定位，<br/>VI设计、SI设计、BI设计、品牌形象策划、<br/>营销推广策划、宣传物料设计</p>
+						</div>
+					</div>
+					<div class="bk-item3 sprite" style="top:350px;left: 765px;width:259px;height: 335px;background-color: #e60012;background-image: url('img/index_logo_yuanye.jpg');">
+						<div class="bk-item3" style="background-color: #e60012">
+							<p class="bk-title">GULUGULU</p>
+							<p>Service content: <br/>Marketing business <br/>consultan, Marketing<br/>planning and upgrading,<br/>Quarter promotion</p>
+							<p>咕噜咕噜珍珠奶茶品牌</p>
+							<p>营销营运顾问、品牌VI设计&SI<br/>设计形象升级设计、营销推广策划</p>
+						</div>
+					</div>
+					<div class="bk-item4 sprite" style="top:580px;left: 0px;background-image: url('img/index_logo_chois.jpg');">
+						<div class="bk-item4">
+							<p class="bk-title">Chois coffee</p>
+							<p>Service content: Brand investment album planning and design</p>
+							<p>崔逸斯咖啡</p>
+							<p>品牌招商画册策划与设计</p>
+						</div>
+					</div>
+					<div class="bk-item5 sprite" style="top:685px;left: 510px;background-image: url('img/index_logo_dpy.jpg');">
+						<div class="bk-item5">
+							<p class="bk-title">SENCE</p>
+							<p>Service content: Brand design, Brand positioning, <br/>Brand planning, Marketing planning</p>
+							<p>有参意（生活健康概念便利超市）</p>
+							<p>品牌新生设计，包括品牌定位，VI设计、SI设计、营销推广策划</p>
+						</div>
+					</div> 
+					<div class="bk-item6 sprite" style="top:835px;left: 0px;background-color: #595757;background-image: url('img/index_logo_douai.jpg');">
+						<div class="bk-item6" style="background-color: #595757">
+							<p class="bk-title">Culinary <br/>Designer</p>
+							<p>Service content: Brand <br/>positioning</p>
+						</div>
+					</div>
+					<div class="bk-item6 sprite" style="top:835px;left: 255px;background-color: #c8b262;background-image: url('img/index_logo_theone.jpg');">
+						<div class="bk-item6" style="background-color: #c8b262">
+							<p class="bk-title">WEI YI</p>
+							<p>Service content: Brand <br/>positioning</p>
+							<p>唯医化妆品</p>
+							<p>品牌新生设计，品牌定位设计</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

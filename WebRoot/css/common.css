@@ -1,0 +1,52 @@
+.spaceIdentity .navi{
+		margin: 40px 0px;
+		text-align: right;
+		font-size: 14px;
+}
+.spaceIdentity .navi .selected{
+	color: #94c523;
+}
+.spaceIdentity .item{
+	width: 255px;
+	height: 292px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d0d0d0;
+}
+.spaceIdentity .item1{
+	width: 481px;
+	height: 242px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d0d0d0;
+	background-color: #94c523;
+	color: #fff;
+	font-size: 32px;
+	padding-top: 50px;
+	padding-left: 30px;
+	letter-spacing: 4px;
+	position: relative;
+	overflow: hidden;
+}
+.logo-container{
+	border-top: 1px solid #d0d0d0;
+	border-left: 1px solid #d0d0d0;
+	width: 1024px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	position: relative;
+}
+.animate-container{
+	width: 481px;
+	height: 192px;
+	position: absolute;
+	top:-192px;
+	left:0px;
+	color: #fff;
+	font-size: 32px;
+	padding-top: 100px;
+	padding-left: 30px;
+	letter-spacing: 4px;
+}
